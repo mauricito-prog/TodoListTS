@@ -28,24 +28,23 @@ h1 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: clamp(1.3rem, 5vw, 2rem);
 }
 
-/* Input + botão adicionar */
+/* Input + botão adicionar - SEMPRE LADO A LADO */
 .input-area {
     display: flex;
     gap: 8px;
     margin-bottom: 20px;
-    flex-wrap: wrap;
 }
 
 #taskInput {
     flex: 1;
-    min-width: 200px;
     padding: 12px;
     border: 2px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
+    min-width: 0;
 }
 
 #taskInput:focus {
@@ -54,7 +53,7 @@ h1 {
 }
 
 #addBtn {
-    padding: 12px 24px;
+    padding: 12px 20px;
     background: #667eea;
     color: white;
     border: none;
@@ -63,6 +62,7 @@ h1 {
     font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
+    flex-shrink: 0;
 }
 
 #addBtn:hover {
@@ -119,6 +119,7 @@ h1 {
     user-select: text;
     word-break: break-word;
     line-height: 1.4;
+    min-width: 0;
 }
 
 /* Botão de excluir */
@@ -163,29 +164,26 @@ h1 {
     }
 
     h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-bottom: 15px;
     }
 
     .input-area {
-        flex-direction: column;
-        gap: 10px;
+        gap: 6px;
     }
 
     #taskInput {
-        min-width: 100%;
         font-size: 14px;
-        padding: 10px;
+        padding: 10px 8px;
     }
 
     #addBtn {
-        width: 100%;
-        padding: 12px;
-        font-size: 15px;
+        padding: 10px 12px;
+        font-size: 14px;
     }
 
     .task-item {
-        padding: 10px;
+        padding: 10px 8px;
         gap: 8px;
     }
 
@@ -212,10 +210,16 @@ h1 {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     #taskInput {
+        font-size: 15px;
+        padding: 11px;
+    }
+
+    #addBtn {
+        padding: 11px 16px;
         font-size: 15px;
     }
 
@@ -249,19 +253,41 @@ h1 {
 
     .container {
         margin: 10px 0;
+        padding: 15px;
     }
 
     h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-bottom: 10px;
     }
 
     .input-area {
         margin-bottom: 10px;
+        gap: 6px;
+    }
+
+    #taskInput {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #addBtn {
+        padding: 8px 14px;
+        font-size: 14px;
     }
 
     .task-item {
         padding: 8px;
+        gap: 8px;
+    }
+
+    .task-text {
+        font-size: 14px;
+    }
+
+    .delete-btn {
+        padding: 6px 10px;
+        font-size: 12px;
     }
 }
 
