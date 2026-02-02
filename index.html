@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas - TypeScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Minha Lista de Tarefas</h1>
+
+        <!-- Formulário para adicionar tarefas -->
+        <div class="input-area">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Digite uma nova tarefa..."
+            >
+            <button id="addBtn">Adicionar</button>
+        </div>
+
+        <!-- Lista de tarefas (será preenchida pelo TypeScript) -->
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Importa o JavaScript gerado pelo TypeScript -->
+    <script src="app.js"></script>
+</body>
+</html>
